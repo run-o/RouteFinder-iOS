@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A03F21491B8AAB9300CEF0E4 /* OrientationFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F21481B8AAB9300CEF0E4 /* OrientationFinderView.swift */; };
+		A0E62BFC1B78481600480373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E62BFB1B78481600480373 /* AppDelegate.swift */; };
+		A0E62BFF1B78481600480373 /* RouteFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0E62BFD1B78481600480373 /* RouteFinder.xcdatamodeld */; };
+		A0E62C011B78481600480373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E62C001B78481600480373 /* ViewController.swift */; };
+		A0E62C041B78481600480373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E62C021B78481600480373 /* Main.storyboard */; };
+		A0E62C061B78481600480373 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E62C051B78481600480373 /* Images.xcassets */; };
+		A0E62C091B78481600480373 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E62C071B78481600480373 /* LaunchScreen.xib */; };
+		A0E62C151B78481600480373 /* RouteFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E62C141B78481600480373 /* RouteFinderTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0E62C0F1B78481600480373 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0E62BEE1B78481600480373 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0E62BF51B78481600480373;
+			remoteInfo = RouteFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A03F21481B8AAB9300CEF0E4 /* OrientationFinderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationFinderView.swift; sourceTree = "<group>"; };
+		A0E62BF61B78481600480373 /* RouteFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouteFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0E62BFA1B78481600480373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0E62BFB1B78481600480373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0E62BFE1B78481600480373 /* RouteFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RouteFinder.xcdatamodel; sourceTree = "<group>"; };
+		A0E62C001B78481600480373 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0E62C031B78481600480373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0E62C051B78481600480373 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A0E62C081B78481600480373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A0E62C0E1B78481600480373 /* RouteFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouteFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0E62C131B78481600480373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0E62C141B78481600480373 /* RouteFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteFinderTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0E62BF31B78481600480373 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E62C0B1B78481600480373 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0E62BED1B78481600480373 = {
+			isa = PBXGroup;
+			children = (
+				A0E62BF81B78481600480373 /* RouteFinder */,
+				A0E62C111B78481600480373 /* RouteFinderTests */,
+				A0E62BF71B78481600480373 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0E62BF71B78481600480373 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0E62BF61B78481600480373 /* RouteFinder.app */,
+				A0E62C0E1B78481600480373 /* RouteFinderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0E62BF81B78481600480373 /* RouteFinder */ = {
+			isa = PBXGroup;
+			children = (
+				A0E62BFB1B78481600480373 /* AppDelegate.swift */,
+				A0E62C001B78481600480373 /* ViewController.swift */,
+				A03F21481B8AAB9300CEF0E4 /* OrientationFinderView.swift */,
+				A0E62C021B78481600480373 /* Main.storyboard */,
+				A0E62C051B78481600480373 /* Images.xcassets */,
+				A0E62C071B78481600480373 /* LaunchScreen.xib */,
+				A0E62BFD1B78481600480373 /* RouteFinder.xcdatamodeld */,
+				A0E62BF91B78481600480373 /* Supporting Files */,
+			);
+			path = RouteFinder;
+			sourceTree = "<group>";
+		};
+		A0E62BF91B78481600480373 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0E62BFA1B78481600480373 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0E62C111B78481600480373 /* RouteFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0E62C141B78481600480373 /* RouteFinderTests.swift */,
+				A0E62C121B78481600480373 /* Supporting Files */,
+			);
+			path = RouteFinderTests;
+			sourceTree = "<group>";
+		};
+		A0E62C121B78481600480373 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0E62C131B78481600480373 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0E62BF51B78481600480373 /* RouteFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0E62C181B78481600480373 /* Build configuration list for PBXNativeTarget "RouteFinder" */;
+			buildPhases = (
+				A0E62BF21B78481600480373 /* Sources */,
+				A0E62BF31B78481600480373 /* Frameworks */,
+				A0E62BF41B78481600480373 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RouteFinder;
+			productName = RouteFinder;
+			productReference = A0E62BF61B78481600480373 /* RouteFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0E62C0D1B78481600480373 /* RouteFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0E62C1B1B78481600480373 /* Build configuration list for PBXNativeTarget "RouteFinderTests" */;
+			buildPhases = (
+				A0E62C0A1B78481600480373 /* Sources */,
+				A0E62C0B1B78481600480373 /* Frameworks */,
+				A0E62C0C1B78481600480373 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0E62C101B78481600480373 /* PBXTargetDependency */,
+			);
+			name = RouteFinderTests;
+			productName = RouteFinderTests;
+			productReference = A0E62C0E1B78481600480373 /* RouteFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0E62BEE1B78481600480373 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Renaud Amar";
+				TargetAttributes = {
+					A0E62BF51B78481600480373 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					A0E62C0D1B78481600480373 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = A0E62BF51B78481600480373;
+					};
+				};
+			};
+			buildConfigurationList = A0E62BF11B78481600480373 /* Build configuration list for PBXProject "RouteFinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0E62BED1B78481600480373;
+			productRefGroup = A0E62BF71B78481600480373 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0E62BF51B78481600480373 /* RouteFinder */,
+				A0E62C0D1B78481600480373 /* RouteFinderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0E62BF41B78481600480373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E62C041B78481600480373 /* Main.storyboard in Resources */,
+				A0E62C091B78481600480373 /* LaunchScreen.xib in Resources */,
+				A0E62C061B78481600480373 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E62C0C1B78481600480373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0E62BF21B78481600480373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E62C011B78481600480373 /* ViewController.swift in Sources */,
+				A03F21491B8AAB9300CEF0E4 /* OrientationFinderView.swift in Sources */,
+				A0E62BFC1B78481600480373 /* AppDelegate.swift in Sources */,
+				A0E62BFF1B78481600480373 /* RouteFinder.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E62C0A1B78481600480373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E62C151B78481600480373 /* RouteFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0E62C101B78481600480373 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0E62BF51B78481600480373 /* RouteFinder */;
+			targetProxy = A0E62C0F1B78481600480373 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0E62C021B78481600480373 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0E62C031B78481600480373 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0E62C071B78481600480373 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0E62C081B78481600480373 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0E62C161B78481600480373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0E62C171B78481600480373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0E62C191B78481600480373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RouteFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A0E62C1A1B78481600480373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RouteFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A0E62C1C1B78481600480373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RouteFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RouteFinder.app/RouteFinder";
+			};
+			name = Debug;
+		};
+		A0E62C1D1B78481600480373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RouteFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RouteFinder.app/RouteFinder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0E62BF11B78481600480373 /* Build configuration list for PBXProject "RouteFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0E62C161B78481600480373 /* Debug */,
+				A0E62C171B78481600480373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0E62C181B78481600480373 /* Build configuration list for PBXNativeTarget "RouteFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0E62C191B78481600480373 /* Debug */,
+				A0E62C1A1B78481600480373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0E62C1B1B78481600480373 /* Build configuration list for PBXNativeTarget "RouteFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0E62C1C1B78481600480373 /* Debug */,
+				A0E62C1D1B78481600480373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A0E62BFD1B78481600480373 /* RouteFinder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A0E62BFE1B78481600480373 /* RouteFinder.xcdatamodel */,
+			);
+			currentVersion = A0E62BFE1B78481600480373 /* RouteFinder.xcdatamodel */;
+			path = RouteFinder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A0E62BEE1B78481600480373 /* Project object */;
+}
