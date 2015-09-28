@@ -20,8 +20,23 @@ import CoreMotion
 // magnetic heading:
 // http://stackoverflow.com/questions/15380632/in-ios-what-is-the-difference-between-the-magnetic-field-values-from-the-core-l
 
+// Code snippet to correct azimuth/heading based on device orientation/tilt angle:
+// http://stackoverflow.com/questions/9260033/north-calculation-based-on-magnetometer-and-gyroscope
+
+// More compass correction (haven't tried it - may not need):
+// http://www.sundh.com/blog/2011/09/stabalize-compass-of-iphone-with-gyroscope/
+
 // Simplified wrapper for orientation and motion:
 // https://github.com/MHaroonBaig/MotionKit
+
+
+func degreesToRadians(x: Double) -> Double {
+    return (M_PI * (x) / 180.0)
+}
+
+func radiansToDegrees(x: Double) -> Double {
+    return ((x) * 180.0 / M_PI)
+}
 
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
@@ -35,7 +50,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var altitudeLabel: UILabel!
     @IBOutlet weak var azimuthLabel: UILabel!
     @IBOutlet weak var inclinationLabel: UILabel!
-    @IBOutlet weak var gravityLabel: UILabel!
+    @IBOutlet weak var tiltLabel: UILabel!
     
     
     @IBOutlet weak var recLatitudeLabel: UILabel!
@@ -47,6 +62,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var longitude: Double = 0.0
     var azimuth: Double = 0.0
     var inclination: Double = 0.0
+    var tiltAngle: Double = 0.0
     
     var recLatitude: Double = 0.0
     var recLongitude: Double = 0.0
@@ -91,14 +107,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     return
                 }
                 
-                // display the gravity vector just for extra info:
-                self.gravityLabel.text = String(format: "%.2f %.2f %.2f", data!.gravity.x, data!.gravity.y, data!.gravity.z)
+                // calculate the tilt angle according to the gravity vector
+                // this will be used to correct the azimuth:
+                let gravityVector = CGPointMake(CGFloat(-data!.gravity.x), CGFloat(-data!.gravity.y))
+                self.tiltAngle = self.calculateTiltAngle(gravityVector)
+                self.tiltLabel.text = String(format: "Tilt: %.2f", self.tiltAngle)
                 
                 // get the elevation (inclination), in degrees:
                 // - for portrait mode, the inclination is the pitch
                 // - for landscape mode, it is the roll
-                //self.inclination = self.motionManager.deviceMotion.attitude.pitch * 180 / M_PI
-                self.inclination = 90 - data!.attitude.pitch * 180 / M_PI;
+                self.inclination = 90 - radiansToDegrees(data!.attitude.pitch);
                 // adjust the inclination depending on the gravity vector orientation:
                 if (data!.gravity.z < 0) {
                     self.inclination *= -1
@@ -230,7 +248,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didUpdateHeading newHeading: CLHeading)
     {
         azimuth = locationManager.heading!.magneticHeading
-        azimuthLabel.text  = String(format: "Azimuth: %.4f", azimuth)
+        // compute corrected azimuth using the tilt angle:
+        let correctedAzimuth = fmod(azimuth + tiltAngle, 360.0)
+        azimuthLabel.text  = String(format: "Azimuth: %.2f %.2f", azimuth, correctedAzimuth)
         
         // update the orientation finder view:
         if (recAzimuth > 0) {
@@ -239,6 +259,30 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
 
+    // this function calculates the device's tilt angle
+    // between the gravity vector and the Y axis:
+    func calculateTiltAngle(vector: CGPoint) -> Double {
+        let dX = vector.x
+        let dY = vector.y
+    
+        if (dY == 0)
+        {
+            if (dX == 0) { return -1 }
+            
+            return dX > 0 ? 0.0 : 180.0
+        }
+    
+        let beta = radiansToDegrees(Double(atan(dX/dY)));
+        var angle : Double;
+        
+        if (dX > 0) {
+            angle = dY < 0 ? 180 + beta : beta
+        } else {
+            angle = beta + (dY < 0 ? 180 : 360)
+        }
+        
+        return angle;
+    }
 
 }
 

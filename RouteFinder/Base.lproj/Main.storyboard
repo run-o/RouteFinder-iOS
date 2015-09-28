@@ -110,7 +110,7 @@
                                     <constraint firstAttribute="width" constant="100" id="jBf-mn-k1e"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Gravity: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lt-hl-1MN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tilt angle: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lt-hl-1MN">
                                 <rect key="frame" x="16" y="128" width="100" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="UV1-f3-dHW"/>
@@ -156,7 +156,6 @@
                         <outlet property="altitudeLabel" destination="tVD-uk-948" id="vcz-xN-3qS"/>
                         <outlet property="azimuthLabel" destination="yrt-th-nqS" id="bAu-qu-A93"/>
                         <outlet property="capturedImage" destination="eMI-zo-ntk" id="XlD-gZ-RdU"/>
-                        <outlet property="gravityLabel" destination="5Lt-hl-1MN" id="MRP-ie-GXF"/>
                         <outlet property="inclinationLabel" destination="PmZ-v6-c28" id="7Up-QG-y39"/>
                         <outlet property="latitudeLabel" destination="4bP-6P-2IK" id="m9V-BK-nef"/>
                         <outlet property="longitudeLabel" destination="fCx-gp-GzE" id="cq0-yc-Zvh"/>
@@ -166,6 +165,7 @@
                         <outlet property="recInclinationLabel" destination="VHd-oq-C1w" id="diO-Op-Sc4"/>
                         <outlet property="recLatitudeLabel" destination="2Gc-Rt-9xx" id="8Nh-7L-Ftz"/>
                         <outlet property="recLongitudeLabel" destination="gyY-fE-tHb" id="XGk-lE-yPh"/>
+                        <outlet property="tiltLabel" destination="5Lt-hl-1MN" id="dwO-Ok-C9e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
