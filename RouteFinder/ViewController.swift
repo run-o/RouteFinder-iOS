@@ -113,15 +113,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 self.tiltAngle = self.calculateTiltAngle(gravityVector)
                 self.tiltLabel.text = String(format: "Tilt: %.2f", self.tiltAngle)
                 
-                // get the elevation (inclination), in degrees:
-                // - for portrait mode, the inclination is the pitch
-                // - for landscape mode, it is the roll
-                self.inclination = 90 - radiansToDegrees(data!.attitude.pitch);
-                // adjust the inclination depending on the gravity vector orientation:
-                if (data!.gravity.z < 0) {
-                    self.inclination *= -1
-                }
-                
+                // get the inclination:
+                self.inclination = self.calculateInclination(data!)
                 self.inclinationLabel.text = String(format: "Inclination: %.4f", self.inclination)
                 
                 // update the orientation finder view:
@@ -260,7 +253,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     // this function calculates the device's tilt angle
-    // between the gravity vector and the Y axis:
+    // (angle of the gravity vector in the device's referential):
     func calculateTiltAngle(vector: CGPoint) -> Double {
         let dX = vector.x
         let dY = vector.y
@@ -282,6 +275,43 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
         
         return angle;
+    }
+    
+    // this function calculates the inclination angle given a CMDeviceMotion object
+    // Depending on the orientation of the device, it will use either the pitch
+    // or the roll to calculate the inclination and adjust it depending on gravity:
+    func calculateInclination(motion: CMDeviceMotion) -> Double {
+        // first determine the device orientation:
+        let orientation = UIApplication.sharedApplication().statusBarOrientation;
+        //let orientation = UIDevice.currentDevice().orientation
+        
+        var inclination : Double
+        
+        // get the inclination angle, in degrees:
+        // - for portrait mode, the inclination is the pitch
+        // - for landscape mode, it is the roll
+        // and adjust it depending on the orientation
+        switch orientation {
+        case UIInterfaceOrientation.Unknown:
+            inclination = 0
+            break
+        case UIInterfaceOrientation.Portrait:
+            inclination = 90 - radiansToDegrees(motion.attitude.pitch)
+            // adjust the sign depending on the z component of the gravity vector:
+            inclination *= motion.gravity.z < 0 ? -1 : 1;
+            break
+        case UIInterfaceOrientation.PortraitUpsideDown:
+            inclination = radiansToDegrees(motion.attitude.pitch)
+            break
+        case UIInterfaceOrientation.LandscapeLeft:
+            inclination = radiansToDegrees(motion.attitude.roll) - 90.0
+            break
+        case UIInterfaceOrientation.LandscapeRight:
+            inclination = -1.0*radiansToDegrees(motion.attitude.roll) - 90.0
+            break
+        }
+        
+        return inclination
     }
 
 }
