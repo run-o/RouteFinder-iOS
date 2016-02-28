@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A03F21491B8AAB9300CEF0E4 /* OrientationFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F21481B8AAB9300CEF0E4 /* OrientationFinderView.swift */; };
+		A0E1FF671C79A76300ED46BE /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E1FF661C79A76300ED46BE /* PhotoViewController.swift */; };
+		A0E1FF691C7AD15500ED46BE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E1FF681C7AD15500ED46BE /* Utils.swift */; };
+		A0E1FF711C8237A500ED46BE /* OrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E1FF701C8237A500ED46BE /* OrientationManager.swift */; };
 		A0E62BFC1B78481600480373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E62BFB1B78481600480373 /* AppDelegate.swift */; };
 		A0E62BFF1B78481600480373 /* RouteFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0E62BFD1B78481600480373 /* RouteFinder.xcdatamodeld */; };
 		A0E62C011B78481600480373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E62C001B78481600480373 /* ViewController.swift */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		A03F21481B8AAB9300CEF0E4 /* OrientationFinderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationFinderView.swift; sourceTree = "<group>"; };
+		A0E1FF661C79A76300ED46BE /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		A0E1FF681C7AD15500ED46BE /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A0E1FF701C8237A500ED46BE /* OrientationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationManager.swift; sourceTree = "<group>"; };
 		A0E62BF61B78481600480373 /* RouteFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouteFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E62BFA1B78481600480373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0E62BFB1B78481600480373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,9 +87,12 @@
 		A0E62BF81B78481600480373 /* RouteFinder */ = {
 			isa = PBXGroup;
 			children = (
+				A0E1FF661C79A76300ED46BE /* PhotoViewController.swift */,
+				A0E1FF701C8237A500ED46BE /* OrientationManager.swift */,
 				A0E62BFB1B78481600480373 /* AppDelegate.swift */,
 				A0E62C001B78481600480373 /* ViewController.swift */,
 				A03F21481B8AAB9300CEF0E4 /* OrientationFinderView.swift */,
+				A0E1FF681C7AD15500ED46BE /* Utils.swift */,
 				A0E62C021B78481600480373 /* Main.storyboard */,
 				A0E62C051B78481600480373 /* Images.xcassets */,
 				A0E62C071B78481600480373 /* LaunchScreen.xib */,
@@ -222,8 +231,11 @@
 			files = (
 				A0E62C011B78481600480373 /* ViewController.swift in Sources */,
 				A03F21491B8AAB9300CEF0E4 /* OrientationFinderView.swift in Sources */,
+				A0E1FF711C8237A500ED46BE /* OrientationManager.swift in Sources */,
 				A0E62BFC1B78481600480373 /* AppDelegate.swift in Sources */,
 				A0E62BFF1B78481600480373 /* RouteFinder.xcdatamodeld in Sources */,
+				A0E1FF671C79A76300ED46BE /* PhotoViewController.swift in Sources */,
+				A0E1FF691C7AD15500ED46BE /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
