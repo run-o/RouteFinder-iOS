@@ -301,7 +301,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             inclination *= motion.gravity.z < 0 ? -1 : 1;
             break
         case UIInterfaceOrientation.PortraitUpsideDown:
-            inclination = radiansToDegrees(motion.attitude.pitch)
+            inclination = 90 - radiansToDegrees(motion.attitude.pitch)
+            inclination *= motion.gravity.z < 0 ? 1 : -1;
             break
         case UIInterfaceOrientation.LandscapeLeft:
             inclination = radiansToDegrees(motion.attitude.roll) - 90.0
