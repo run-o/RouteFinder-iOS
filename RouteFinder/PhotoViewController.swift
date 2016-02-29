@@ -125,9 +125,30 @@ class PhotoViewController: UIViewController, OrientationManagerDelegate {
                     var image = UIImage(CGImage: cgImageRef!, scale: 1.0, orientation: UIImageOrientation.Right)
                     // then assign the new image to our capturedImage:
                     //self.capturedImage.image = image
+                    self.savePhotoToFileSystem(image)
                 }
             })
         }
+    }
+    
+    func savePhotoToFileSystem(image: UIImage) {
+        let imageData = UIImageJPEGRepresentation(image, 1.0)
+        let documentsURL = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
+        
+        // format date to a string for photo filename:
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd_HH.mm.ss"
+        let photoFileName = String(format: "%@.jpg", dateFormatter.stringFromDate(NSDate()) )
+        
+        let imageURL = documentsURL.URLByAppendingPathComponent(photoFileName)
+        
+        if (imageData!.writeToURL(imageURL, atomically: false)) {
+            NSUserDefaults.standardUserDefaults().setObject(imageURL.path, forKey: "imagePath")
+        }
+        else {
+            print ("writeToUrl failed")
+        }
+
     }
     
 }
