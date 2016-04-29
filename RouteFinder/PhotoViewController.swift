@@ -142,8 +142,16 @@ class PhotoViewController: UIViewController, OrientationManagerDelegate {
         
         let imageURL = documentsURL.URLByAppendingPathComponent(photoFileName)
         
+        // save the path to the NSUserDefaults for now (will save to DB later):
+        // retrieve the current photo index:
+        var photoIndex = NSUserDefaults.standardUserDefaults().integerForKey("photoIndex")
+
         if (imageData!.writeToURL(imageURL, atomically: false)) {
-            NSUserDefaults.standardUserDefaults().setObject(imageURL.path, forKey: "imagePath")
+            // increment the stored photo index and store it:
+            photoIndex++
+            NSUserDefaults.standardUserDefaults().setInteger(photoIndex, forKey: "photoIndex")
+            // save the current photo under the new index:
+            NSUserDefaults.standardUserDefaults().setObject(photoFileName, forKey: String(format: "photoPath%d", photoIndex))
         }
         else {
             print ("writeToUrl failed")
