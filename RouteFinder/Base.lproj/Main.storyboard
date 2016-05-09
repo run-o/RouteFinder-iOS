@@ -168,11 +168,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RhG-YB-mkT">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RhG-YB-mkT">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="RhG-YB-mkT" secondAttribute="trailing" constant="-20" id="8Az-ST-mG6"/>
+                            <constraint firstItem="RhG-YB-mkT" firstAttribute="bottom" secondItem="yLD-Xy-cKl" secondAttribute="bottomMargin" id="Eem-UC-D5l"/>
+                            <constraint firstItem="RhG-YB-mkT" firstAttribute="leading" secondItem="yLD-Xy-cKl" secondAttribute="leadingMargin" constant="-20" id="KJh-qT-tIQ"/>
+                            <constraint firstItem="RhG-YB-mkT" firstAttribute="top" secondItem="yLD-Xy-cKl" secondAttribute="topMargin" id="rQc-sh-LDI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UUt-6K-6aH"/>
                     <connections>
@@ -216,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFc-B4-87q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="213" y="201"/>
+            <point key="canvasLocation" x="213" y="200.99999999999997"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -383,7 +389,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1151" y="62"/>
+            <point key="canvasLocation" x="1151" y="61.999999999999993"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3ku-U9-EKC">
@@ -405,7 +411,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6A-GV-yi4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-256" y="201"/>
+            <point key="canvasLocation" x="-256" y="200.99999999999997"/>
         </scene>
     </scenes>
 </document>

@@ -23,6 +23,7 @@ class PhotoViewer: UIViewController {
         
         let image = UIImage(contentsOfFile:photoFilePath)
         photoView.image = image
+        photoView.contentMode = UIViewContentMode.ScaleAspectFit
     }
 
     override func didReceiveMemoryWarning() {
