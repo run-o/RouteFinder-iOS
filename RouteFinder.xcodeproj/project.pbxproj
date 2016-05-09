@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00085E7D53238D0B0F18F4D7 /* Pods_RouteFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A6516E66AE35FD25EBF0A8 /* Pods_RouteFinder.framework */; };
+		7BC5806A1F98FBD6F07D1C2A /* Pods_RouteFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B6D30F89E1FDA9556BAEF0 /* Pods_RouteFinderTests.framework */; };
 		A03F21491B8AAB9300CEF0E4 /* OrientationFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F21481B8AAB9300CEF0E4 /* OrientationFinderView.swift */; };
+		A09669691CDF022200BEAF62 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A09669681CDF022200BEAF62 /* SQLite.framework */; };
 		A0D78A461CCEEECE00F31A9A /* PhotoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D78A451CCEEECE00F31A9A /* PhotoViewer.swift */; };
 		A0D78A4A1CD02D4500F31A9A /* PhotoThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D78A491CD02D4500F31A9A /* PhotoThumbnail.swift */; };
+		A0D78A531CD5E23300F31A9A /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D78A521CD5E23300F31A9A /* Photo.swift */; };
+		A0D78A551CD5E47D00F31A9A /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D78A541CD5E47D00F31A9A /* Route.swift */; };
+		A0D78A571CD5E61B00F31A9A /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D78A561CD5E61B00F31A9A /* Area.swift */; };
+		A0D78A591CDE7E7F00F31A9A /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D78A581CDE7E7F00F31A9A /* DBManager.swift */; };
 		A0E1FF671C79A76300ED46BE /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E1FF661C79A76300ED46BE /* PhotoViewController.swift */; };
 		A0E1FF691C7AD15500ED46BE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E1FF681C7AD15500ED46BE /* Utils.swift */; };
 		A0E1FF711C8237A500ED46BE /* OrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E1FF701C8237A500ED46BE /* OrientationManager.swift */; };
@@ -34,9 +41,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		376F80515F074D30CDE650A9 /* Pods-RouteFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RouteFinder/Pods-RouteFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		389430F894AEC409A5E178B1 /* Pods-RouteFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteFinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RouteFinderTests/Pods-RouteFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E87ABA63FDFD015D69E804B /* Pods-RouteFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RouteFinderTests/Pods-RouteFinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		65A6516E66AE35FD25EBF0A8 /* Pods_RouteFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RouteFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76445B628D5B764398603003 /* Pods-RouteFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-RouteFinder/Pods-RouteFinder.release.xcconfig"; sourceTree = "<group>"; };
 		A03F21481B8AAB9300CEF0E4 /* OrientationFinderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationFinderView.swift; sourceTree = "<group>"; };
+		A09669681CDF022200BEAF62 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "Pods/../build/Debug-iphoneos/SQLite.swift/SQLite.framework"; sourceTree = "<group>"; };
 		A0D78A451CCEEECE00F31A9A /* PhotoViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewer.swift; sourceTree = "<group>"; };
 		A0D78A491CD02D4500F31A9A /* PhotoThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoThumbnail.swift; sourceTree = "<group>"; };
+		A0D78A521CD5E23300F31A9A /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		A0D78A541CD5E47D00F31A9A /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		A0D78A561CD5E61B00F31A9A /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		A0D78A581CDE7E7F00F31A9A /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		A0E1FF661C79A76300ED46BE /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		A0E1FF681C7AD15500ED46BE /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		A0E1FF701C8237A500ED46BE /* OrientationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationManager.swift; sourceTree = "<group>"; };
@@ -52,6 +69,7 @@
 		A0E62C0E1B78481600480373 /* RouteFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouteFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E62C131B78481600480373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0E62C141B78481600480373 /* RouteFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteFinderTests.swift; sourceTree = "<group>"; };
+		A9B6D30F89E1FDA9556BAEF0 /* Pods_RouteFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RouteFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00085E7D53238D0B0F18F4D7 /* Pods_RouteFinder.framework in Frameworks */,
+				A09669691CDF022200BEAF62 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,18 +86,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC5806A1F98FBD6F07D1C2A /* Pods_RouteFinderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B831E185D8937C62D17DA45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A09669681CDF022200BEAF62 /* SQLite.framework */,
+				65A6516E66AE35FD25EBF0A8 /* Pods_RouteFinder.framework */,
+				A9B6D30F89E1FDA9556BAEF0 /* Pods_RouteFinderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46C35AFB526A5EEE81B650D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				376F80515F074D30CDE650A9 /* Pods-RouteFinder.debug.xcconfig */,
+				76445B628D5B764398603003 /* Pods-RouteFinder.release.xcconfig */,
+				389430F894AEC409A5E178B1 /* Pods-RouteFinderTests.debug.xcconfig */,
+				3E87ABA63FDFD015D69E804B /* Pods-RouteFinderTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A0D78A511CD5E21800F31A9A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A0D78A521CD5E23300F31A9A /* Photo.swift */,
+				A0D78A541CD5E47D00F31A9A /* Route.swift */,
+				A0D78A561CD5E61B00F31A9A /* Area.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		A0E62BED1B78481600480373 = {
 			isa = PBXGroup;
 			children = (
 				A0E62BF81B78481600480373 /* RouteFinder */,
 				A0E62C111B78481600480373 /* RouteFinderTests */,
 				A0E62BF71B78481600480373 /* Products */,
+				46C35AFB526A5EEE81B650D1 /* Pods */,
+				0B831E185D8937C62D17DA45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +147,7 @@
 		A0E62BF81B78481600480373 /* RouteFinder */ = {
 			isa = PBXGroup;
 			children = (
+				A0D78A511CD5E21800F31A9A /* Models */,
 				A0E1FF661C79A76300ED46BE /* PhotoViewController.swift */,
 				A0E1FF721C84233200ED46BE /* BrowsePhotosViewController.swift */,
 				A0D78A451CCEEECE00F31A9A /* PhotoViewer.swift */,
@@ -107,6 +162,7 @@
 				A0E62BFD1B78481600480373 /* RouteFinder.xcdatamodeld */,
 				A0E62BF91B78481600480373 /* Supporting Files */,
 				A0D78A491CD02D4500F31A9A /* PhotoThumbnail.swift */,
+				A0D78A581CDE7E7F00F31A9A /* DBManager.swift */,
 			);
 			path = RouteFinder;
 			sourceTree = "<group>";
@@ -143,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0E62C181B78481600480373 /* Build configuration list for PBXNativeTarget "RouteFinder" */;
 			buildPhases = (
+				FE4722CFCCF8C3A3AE64E9E0 /* 📦 Check Pods Manifest.lock */,
 				A0E62BF21B78481600480373 /* Sources */,
 				A0E62BF31B78481600480373 /* Frameworks */,
 				A0E62BF41B78481600480373 /* Resources */,
+				40903D4EAD6F3B02B9985C04 /* 📦 Embed Pods Frameworks */,
+				65E2CEF57154D10B1A6ADDD2 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0E62C1B1B78481600480373 /* Build configuration list for PBXNativeTarget "RouteFinderTests" */;
 			buildPhases = (
+				BE79A3E7F281B3503CD25F3D /* 📦 Check Pods Manifest.lock */,
 				A0E62C0A1B78481600480373 /* Sources */,
 				A0E62C0B1B78481600480373 /* Frameworks */,
 				A0E62C0C1B78481600480373 /* Resources */,
+				3E8362F71F0BFD20F5999814 /* 📦 Embed Pods Frameworks */,
+				9B61365D5E0B780639375B0B /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +295,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E8362F71F0BFD20F5999814 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RouteFinderTests/Pods-RouteFinderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40903D4EAD6F3B02B9985C04 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RouteFinder/Pods-RouteFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65E2CEF57154D10B1A6ADDD2 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RouteFinder/Pods-RouteFinder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B61365D5E0B780639375B0B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RouteFinderTests/Pods-RouteFinderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE79A3E7F281B3503CD25F3D /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE4722CFCCF8C3A3AE64E9E0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0E62BF21B78481600480373 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -245,9 +400,13 @@
 				A0E1FF711C8237A500ED46BE /* OrientationManager.swift in Sources */,
 				A0E62BFC1B78481600480373 /* AppDelegate.swift in Sources */,
 				A0D78A461CCEEECE00F31A9A /* PhotoViewer.swift in Sources */,
+				A0D78A531CD5E23300F31A9A /* Photo.swift in Sources */,
 				A0E62BFF1B78481600480373 /* RouteFinder.xcdatamodeld in Sources */,
+				A0D78A551CD5E47D00F31A9A /* Route.swift in Sources */,
 				A0E1FF671C79A76300ED46BE /* PhotoViewController.swift in Sources */,
 				A0E1FF691C7AD15500ED46BE /* Utils.swift in Sources */,
+				A0D78A571CD5E61B00F31A9A /* Area.swift in Sources */,
+				A0D78A591CDE7E7F00F31A9A /* DBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,8 +531,13 @@
 		};
 		A0E62C191B78481600480373 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 376F80515F074D30CDE650A9 /* Pods-RouteFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SQLite.swift",
+				);
 				INFOPLIST_FILE = RouteFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -383,8 +547,13 @@
 		};
 		A0E62C1A1B78481600480373 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76445B628D5B764398603003 /* Pods-RouteFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SQLite.swift",
+				);
 				INFOPLIST_FILE = RouteFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -394,6 +563,7 @@
 		};
 		A0E62C1C1B78481600480373 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 389430F894AEC409A5E178B1 /* Pods-RouteFinderTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -413,6 +583,7 @@
 		};
 		A0E62C1D1B78481600480373 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E87ABA63FDFD015D69E804B /* Pods-RouteFinderTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
